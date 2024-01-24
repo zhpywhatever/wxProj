@@ -1,8 +1,54 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    
+    
+    "pages/homepage/homepage",
+    "pages/AItext/AItext",
+    "pages/mypage/mypage",
+    "pages/task/task"
   ],
+
+  "tabBar": {
+    "color":"#7A7E83",
+    "selectedColor":"#3cc51f",
+    
+    "backgroundColor":"#ffffff",
+    "position": "bottom",
+    "list": [
+    {
+    "pagePath": "pages/homepage/homepage",
+    "iconPath": "images/homepage.png",
+    "selectedIconPath" : "images/homepage_sel.png",
+    "text":"homepage"
+    },
+    {
+    "pagePath":"pages/AItext/AItext",
+    "iconPath":"images/AItext.png",
+    "selectedIconPath":"images/AItext_sel.png",
+    "text":"AItext"
+    },
+    {
+        "pagePath":"pages/task/task",
+        "iconPath":"images/task.png",
+        "selectedIconPath":"images/task_sel.png",
+        "text":"task"
+        },
+    {
+        "pagePath":"pages/mypage/mypage",
+        "iconPath":"images/mypage.png",
+        "selectedIconPath":"images/mypage_sel.png",
+        "text":"mypage"
+        }
+    ]
+},
+
+
+
+
+
+
+
+
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
