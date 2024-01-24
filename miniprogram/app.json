@@ -1,9 +1,8 @@
 {
   "pages": [
-    
-    
     "pages/homepage/homepage",
     "pages/AItext/AItext",
+    "pages/circle/circle",
     "pages/mypage/mypage",
     "pages/task/task"
   ],
@@ -26,6 +25,12 @@
     "iconPath":"images/AItext.png",
     "selectedIconPath":"images/AItext_sel.png",
     "text":"AItext"
+    },
+    {
+    "pagePath": "pages/circle/circle",
+    "iconPath": "images/circle.png",
+    "selectedIconPath" : "images/circle_sel.png",
+    "text":"circle"
     },
     {
         "pagePath":"pages/task/task",
