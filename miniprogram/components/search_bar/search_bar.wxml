@@ -1,0 +1,6 @@
+<!--components/search_bar/search_bar.wxml-->
+<view class="search_bar">
+<image class="icon_search" src="../../images/icon_search.png"></image>
+<input class="search_input" type="text" placeholder="请输入关键词" />
+</view>
+

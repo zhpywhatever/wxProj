@@ -1,2 +1,4 @@
 <!--pages/mypage/mypage.wxml-->
-<text>pages/mypage/mypage.wxml</text>
+<view class="topbar">
+  <view class="topbar-title">我的</view>
+</view>

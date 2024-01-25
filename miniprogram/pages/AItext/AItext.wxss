@@ -1,0 +1,15 @@
+/* pages/AItext/AItext.wxss */
+.topbar {
+    background-color: #1c085d;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50rpx;
+    color: #fff;
+  }
+  
+  .topbar-title {
+    font-size: 18px;
+  }
+  

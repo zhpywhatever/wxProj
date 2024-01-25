@@ -4,13 +4,12 @@
     "pages/AItext/AItext",
     "pages/circle/circle",
     "pages/mypage/mypage",
-    "pages/task/task"
+    "pages/classs/class"
   ],
 
   "tabBar": {
     "color":"#7A7E83",
-    "selectedColor":"#3cc51f",
-    
+    "selectedColor":"#1c085d",
     "backgroundColor":"#ffffff",
     "position": "bottom",
     "list": [
@@ -18,31 +17,33 @@
     "pagePath": "pages/homepage/homepage",
     "iconPath": "images/homepage.png",
     "selectedIconPath" : "images/homepage_sel.png",
-    "text":"homepage"
+    "text":"首页"
     },
     {
     "pagePath":"pages/AItext/AItext",
     "iconPath":"images/AItext.png",
     "selectedIconPath":"images/AItext_sel.png",
-    "text":"AItext"
+    "text":"AI文案"
     },
     {
     "pagePath": "pages/circle/circle",
     "iconPath": "images/circle.png",
     "selectedIconPath" : "images/circle_sel.png",
-    "text":"circle"
+    "text":"副业圈"
     },
     {
-        "pagePath":"pages/task/task",
-        "iconPath":"images/task.png",
-        "selectedIconPath":"images/task_sel.png",
-        "text":"task"
+        "pagePath":"pages/classs/class",
+        "iconPath":"images/class.png",
+        "selectedIconPath":"images/class_sel.png",
+        "text":"课堂"
         },
+    
+    
     {
         "pagePath":"pages/mypage/mypage",
         "iconPath":"images/mypage.png",
         "selectedIconPath":"images/mypage_sel.png",
-        "text":"mypage"
+        "text":"我的"
         }
     ]
 },

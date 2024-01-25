@@ -1,2 +1,4 @@
 <!--pages/AItext/AItext.wxml-->
-<text>pages/AItext/AItext.wxml</text>
+<view class="topbar">
+  <view class="topbar-title">AI文案</view>
+</view>
