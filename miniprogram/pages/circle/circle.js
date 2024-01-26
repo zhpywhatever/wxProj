@@ -1,9 +1,15 @@
+import circleList from "../../datas/circleList.js"
+
+// index.js
+const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'
+
 Page({
  
     /**
      * 页面的初始数据
      */
     data: {
+    broadcasts:[],
       currentTab: 0, //对应样式变化
       scrollTop: 0, //用作跳转后右侧视图回到顶部
       screenArray: [{
@@ -90,6 +96,9 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
+        this.setData({
+            broadcasts : circleList.circlecasts
+        });
    
     },
    

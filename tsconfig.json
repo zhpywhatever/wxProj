@@ -23,7 +23,7 @@
   },
   "include": [
     "./**/*.ts"
-, "miniprogram/pages/class/circle.js", "miniprogram/pages/classs/task.js", "miniprogram/pages/mypage/mypage.js", "miniprogram/pages/index/index.js", "miniprogram/pages/homepage/homepage.js", "miniprogram/pages/AItext/AItext.js", "miniprogram/components/search_bar/search_bar.js"  ],
+, "miniprogram/pages/class/circle.js", "miniprogram/pages/classs/task.js", "miniprogram/pages/mypage/mypage.js", "miniprogram/pages/index/index.js", "miniprogram/pages/homepage/homepage.js", "miniprogram/pages/AItext/AItext.js", "miniprogram/components/search_bar/search_bar.js", "miniprogram/components/circleItem/circleItem.js"  ],
   "exclude": [
     "node_modules"
   ]

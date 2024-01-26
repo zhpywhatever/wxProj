@@ -102,3 +102,25 @@
     height:140rpx;
   }
   
+  .circleItems{
+    background-color: #fafafa;
+    width: 700rpx;
+    margin-bottom: 100rpx;
+   padding-bottom: 110rpx;
+    }
+    
+    .circleItems::after {
+    display: block;
+    clear: both;
+    
+    }
+
+    .content {
+        width: 620rpx;
+        height: 100rpx;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }

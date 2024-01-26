@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-      "search_bar":"../../components/search_bar/search_bar"
+      "search_bar":"../../components/search_bar/search_bar",
+      "circleItem":"../../components/circleItem/circleItem"
   }
 }

@@ -10,6 +10,7 @@
   <scroll-view class="left-navbar" scroll-y="true">
     <view wx:for="{{screenArray}}" class="{{ currentTab == index ? 'active' : '' }}" wx:key="unique" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" id="{{index}}" data-screenId="{{item.screenId}}">{{item.screenName}}
     </view>
+    
   </scroll-view>
   <!-- 分类导航栏 E -->
  
@@ -21,6 +22,7 @@
     </view>
     -->
     <!--商品展示-->
+    <!--
     <view class="goods-list" wx:for="{{childrenArray.childrenScreenArray}}" wx:key="unique">
       <view class="goods-title">{{item.screenName}}</view>
       <view wx:for="{{item.childrenScreenArray}}" class="goods" wx:key="unique" bindtap="ToSearchResult" id="{{item.screenName}}" >
@@ -28,6 +30,13 @@
         <text>{{item.screenName}}</text>
       </view>
     </view>
+    -->
+    <view class="circleItems" >
+    <view class="content" wx:for="{{broadcasts}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <circleItem item="{{item}}"></circleItem>
+    </view>
+    
+</view>
   </scroll-view>
   <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}" wx:if="{{screenId==1}}">
     
@@ -95,5 +104,8 @@
       </view>
     </view>
   </scroll-view>
+
+  
   
 </view>
+

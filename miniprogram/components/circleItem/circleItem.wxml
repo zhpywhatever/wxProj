@@ -1,0 +1,6 @@
+<view bindtap="handleBroadcast">
+<view class="circleitem" >
+    <text class="circle_text">{{item.name}}</text>
+</view>
+
+</view>
