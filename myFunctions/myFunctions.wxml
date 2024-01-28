@@ -1,4 +1,0 @@
-<view bindtap="handleFunctions">
-  <image class="function_icon" src="{{item.src}}"></image>
-  <text class="function_text">{{item.text}}</text>
-</view>
