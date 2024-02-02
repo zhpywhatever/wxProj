@@ -69,6 +69,8 @@
     width:75%;
     height:90%;
     background: white;
+    margin: 10px auto;
+    padding-left: 10rpx;
   }
   .goods-banner {
     padding: 20rpx;
