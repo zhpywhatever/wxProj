@@ -1,0 +1,13 @@
+<!--pages/FuncArea1Detail/FuncArea1Detail.wxml-->
+<view class="topbar">
+<navigator url="/pages/homepage/homepage" open-type="switchTab" class="return">
+  <image src="../../images/return.png" ></image>
+</navigator>
+</view>
+<view class="judge"></view>
+
+<view>
+    
+  <FuncCard cata="{{cata}}" name="{{name}}"></FuncCard>
+</view>
+

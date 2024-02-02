@@ -1,4 +1,6 @@
 {
-  "component": true,
-  "usingComponents": {}
-}
+    "usingComponents":{
+      "search_bar":"/components/search_bar/search_bar"
+    }
+  }
+  

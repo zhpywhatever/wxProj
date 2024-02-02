@@ -4,7 +4,9 @@
     "pages/AItext/AItext",
     "pages/circle/circle",
     "pages/mypage/mypage",
-    "pages/classs/class"
+    "pages/classs/class",
+    "pages/FuncArea1Detail/FuncArea1Detail"
+    
   ],
 
   "tabBar": {

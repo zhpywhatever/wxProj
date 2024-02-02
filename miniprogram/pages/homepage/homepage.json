@@ -1,4 +1,6 @@
 {
-  "component": true,
-  "usingComponents": {}
-}
+    "usingComponents": {
+      "navigation-bar": "/components/navigation-bar/navigation-bar",
+      "search_bar":"/components/search_bar/search_bar"
+    }
+  }

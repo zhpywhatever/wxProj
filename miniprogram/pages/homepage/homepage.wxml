@@ -1,2 +1,101 @@
-<!--pages/homepage/homepage.wxml-->
-<text>pages/homepage/homepage.wxml</text>
+<view class="all">
+  <view class="title">
+    <image src="../../images/indeximg/logo.png.png" class="logo"></image>
+    <text class="logotext">爆啦AI</text>
+    <search_bar></search_bar>
+  </view>
+
+  <view class="FuncArea">
+      <swiper class="swipercontainer" indicator-dots="1" autoplay="1" interval="2000" circular="ture" >
+        <swiper-item>
+          <view class="item">A</view>
+        </swiper-item>
+        <swiper-item>
+          <view class="item">B</view>
+        </swiper-item>
+        <swiper-item>
+          <view class="item">C</view>
+        </swiper-item>
+      </swiper>
+    <view class="FuncArea1">
+      <view class="container1">
+        <view class="file" bind:tap="goto" data-name="数据监控">
+          <view>
+            <image src="../../images/indeximg/tiquzimu.png"></image>
+          </view>
+          <view>文案提取</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="图片转文字">
+          <view>
+            <image src="../../images/indeximg/xingzhuang8.png"></image>
+          </view>
+          <view>去水印</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="提词器">
+          <view>
+            <image src="../../images/indeximg/mao.png"></image>
+          </view>
+          <view>钩子开头</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="文案提取">
+          <view>
+            <image src="../../images/indeximg/baokuan.png"></image>
+          </view>
+          <view>爆款文案</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="智能配音">
+          <view>
+            <image src="../../images/indeximg/shipin.png"></image>
+          </view>
+          <view>起号视频</view>
+        </view>
+      </view>
+      <view class="container2">
+        <view class="file" bind:tap="goto" data-name="去水印">
+          <view>
+            <image src="../../images/indeximg/xianliu.png"></image>
+          </view>
+          <view>查限流</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="查权重">
+          <view>
+            <image src="../../images/indeximg/guzhi.png"></image>
+          </view>
+          <view>账号估值</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="违禁词检测">
+          <view>
+            <image src="../../images/indeximg/rewenerchuang.png"></image>
+          </view>
+          <view>智能二创</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="账号估值">
+          <view>
+            <image src="../../images/indeximg/peiyin.png"></image>
+          </view>
+          <view>智能配音</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="视频检测">
+          <view>
+            <image src="../../images/indeximg/ziliao.png"></image>
+          </view>
+          <view>免费资料</view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="shell">
+      <view class="big" bind:tap="gotocircle"><text>爆啦新媒体副业圈</text></view>
+      
+      
+      <view class="wide" bind:tap="goto" data-name="短视频创作"><text >短视频创作</text></view>
+      <view class="wide" bind:tap="goto" data-name="小视频传顾总"><text>小视频创作</text></view>
+      <view class="wide" bind:tap="goto" data-name="公众号创作"><text>公众号创作</text></view>
+      <view class="wide" bind:tap="goto" data-name="小红书创作"><text>小红书创作</text></view>
+      
+    </view>
+  </view>
+
+</view>
+
+

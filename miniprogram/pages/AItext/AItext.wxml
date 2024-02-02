@@ -1,4 +1,31 @@
-<!--pages/AItext/AItext.wxml-->
 <view class="topbar">
   <view class="topbar-title">AI文案</view>
+</view>
+
+<view class="all">
+  <search_bar></search_bar>
+  <view class="classify-container">
+    <view class="classify-left">
+      <view class="classify-left-item {{select==index?'classify-select':''}}" wx:for="{{asideBar}}" wx:key="index" bind:tap="selectleft" data-index="{{index}}">
+        <text>{{item}}</text>
+        <block wx:if="{{select===index}}">
+          <view class="classify-line"></view>
+        </block>
+      </view>
+      
+    </view>
+    <view class="classify-right">
+        <view class="classify-right-item" wx:for="{{rightList[select]}}" wx:key="index">
+          <image src="../../images/favor_false.png" class="favor" bind:tap="changefacor"></image>
+          <text class="text1">{{item.text1}}</text>
+          <text class="text2">{{item.text2}}</text>
+        </view>
+        
+        
+    </view>
+  </view>
+
+    
+  
+
 </view>
