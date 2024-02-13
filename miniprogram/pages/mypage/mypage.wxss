@@ -13,3 +13,128 @@
     font-size: 18px;
   }
   
+  .main_background {
+    padding: 10px;
+    height: 100%;
+    background-color: #e0e0e0;
+  }
+
+  .profile-info {
+    padding: 5px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, rgb(200, 200, 200), whitesmoke);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .profile_upper {
+    display: flex;
+  }
+
+  .profile_lower {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .unlock_icon {
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .profileright {
+    margin-right: 30%;
+    width: max-content;
+    align-content: flex-start;
+  }
+  .unlockmore {
+    width: max-content;
+    align-content: flex-end;
+  }
+
+  .login {
+    margin-top: 5px;
+    margin-bottom: 4px;
+  }
+
+  .loginBTN {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .logininfo {
+    font-size: small;
+  }
+
+  .avatar {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  .uplevel {
+    margin-top: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+
+  .upleveltitle {
+    padding: 5px;
+    padding-left: 15px;
+    font-size: large;
+  }
+
+  .uplevelnow {
+    color: whitesmoke;
+    background-color: #326ffb;
+    margin-top: 2vh;
+  }
+
+  .uplevellist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .uplevelitem {
+    margin: 3px;
+    margin-bottom: 25px;
+    margin-left: 7px;
+    width: 30%;
+    height: 15vh;
+  }
+
+  .uplevelitem_icon {
+    width: 90%;
+    height: 80%;
+  }
+
+  .uplevelitem_text {
+
+  }
+
+  .function_area {
+    margin-top: 15px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+
+  .function_title {
+    padding: 5px;
+    padding-left: 15px;
+    font-size: large;
+  }
+
+  .function_list {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .myFunction {
+    width: 25%;
+    height: 18vh;
+  }
+
+  .function_img {
+    width: 80%;
+    height: 55%;
+  }

@@ -2,3 +2,62 @@
 <view class="topbar">
   <view class="topbar-title">课堂</view>
 </view>
+<view class="main_background">
+
+  <view class="ad_area">
+    <view class="scroll_ad">
+      <swiper class="scrolling_ad" duration="500" circular="true" interval="3000" autoplay="true" indicator-dots="true">
+        <swiper-item>
+          <view class="ad_item">
+            <image src="https://s2.loli.net/2024/02/13/JcKjfUrNqlbp1Tg.png" mode="widthFix" class="ad_img"></image>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="ad_item">
+            <image src="https://s2.loli.net/2024/02/13/tpIiyQrLdU9RzjB.png" mode="widthFix" class="ad_img"></image>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="ad_item">
+            <image src="https://s2.loli.net/2024/02/13/n6zFh3l2N4RxyoK.png" mode="widthFix" class="ad_img"></image>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+
+    <view class="small_area">
+      <view class="small_ad">
+        <image class="small_img" src="https://s2.loli.net/2024/02/13/XemtYSFI5r8N6TM.png"></image>
+      </view>
+      <view class="small_ad">
+        <image class="small_img" src="https://s2.loli.net/2024/02/13/icmGJaklBQCvZMz.png"></image>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="course_area">
+    <view class="course_title">每日好课</view>
+    <view class="course_list">
+      <view class="course_item">
+        <video class="course_video" controls="true" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" poster="https://s2.loli.net/2024/02/13/otbZyrDkCmIRfz1.jpg"></video>
+      </view>
+      <view class="course_item">
+        <video class="course_video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" poster="https://s2.loli.net/2024/02/13/otbZyrDkCmIRfz1.jpg"></video>
+      </view>
+      <view class="course_item">
+        <video class="course_video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" poster="https://s2.loli.net/2024/02/13/otbZyrDkCmIRfz1.jpg"></video>
+      </view>
+      <view class="course_item">
+        <video class="course_video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" poster="https://s2.loli.net/2024/02/13/otbZyrDkCmIRfz1.jpg"></video>
+      </view>
+      <view class="course_item">
+        <video class="course_video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" poster="https://s2.loli.net/2024/02/13/otbZyrDkCmIRfz1.jpg"></video>
+      </view>
+      <view class="course_item">
+        <video class="course_video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" poster="https://s2.loli.net/2024/02/13/otbZyrDkCmIRfz1.jpg"></video>
+      </view>
+    </view>
+  </view>
+
+</view>

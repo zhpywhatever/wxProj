@@ -1,4 +1,44 @@
 <!--pages/mypage/mypage.wxml-->
 <view class="topbar">
-  <view class="topbar-title">我的</view>
+  <view class="topbar-title">个人中心</view>
+</view>
+<view class="main_background">
+  <view class="profile-info">
+    <view class="profile_upper">
+      <image src = "../../assets/用户.png" class="avatar"></image>
+      <view class="login">
+        <button class="loginBTN">点击登录</button>
+        <view class="logininfo">登录体验更多功能</view>
+      </view>
+    </view>
+    
+    <view class="profile_lower">
+      <image src="../../assets/管理.png" class="unlock_icon"></image>
+      <text class="profileright">我的权益</text>
+      <text class="unlockmore">解锁更多权益</text>
+    </view>
+  </view>
+
+
+  <view class="uplevel">
+    <view class="upleveltitle">升级享受权益</view>
+    <view class="uplevellist">
+      <view wx:for="{{uplevelArray}}" class="uplevelitem" wx:key="unique">
+          <image class="uplevelitem_icon" src="{{item.src}}"></image>
+          <text class="uplevelitem_text">{{item.uplevelright}}</text>
+      </view>
+    </view>
+    <button class="uplevelnow">立即升级</button>
+  </view>
+
+
+  <view class="function_area">
+    <view class="function_title">我的功能</view>
+    <view class="function_list">
+      <view wx:for="{{functionArray}}" class="myFunction" wx:key="unique">
+        <image src="{{item.src}}" class="function_img"></image>
+        <text class="function_text">{{item.functionName}}</text>
+      </view>
+    </view>
+  </view>
 </view>

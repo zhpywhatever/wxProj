@@ -13,3 +13,71 @@
     font-size: 18px;
   }
   
+  .main_background {
+    padding: 10px;
+    height: 100%;
+    background-color: #e0e0e0;
+  }
+
+  .scroll_ad {
+    height: 40vh;
+    width: 50%;
+    border-radius: 5px;
+  }
+
+  .scrolling_ad {
+    height: 40vh;
+  }
+
+  .ad_img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ad_area {
+    display: flex;
+  }
+
+  .small_area {
+    background-color: #fff;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .small_ad {
+    background-color: black;
+    height: 45%;
+    margin-bottom: 11px;
+  }
+
+  .small_img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .course_area {
+    background-color: whitesmoke;
+  }
+  
+  .course_title {
+    padding: 5px;
+    padding-left: 15px;
+    font-size: large;
+  }
+
+  .course_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .course_item {
+    width: 26vh;
+    margin: 1vh;
+    height: 15vh;
+    background-color: whitesmoke
+  }
+
+  .course_video {
+    width: 100%;
+    height: 100%;
+  }
