@@ -1,4 +1,4 @@
-<view class="topbar">
+<view class="topbar" style="width: 750rpx; height: 162rpx; display: flex; box-sizing: border-box">
   <view class="topbar-title">AI文案</view>
 </view>
 
@@ -15,10 +15,10 @@
       
     </view>
     <view class="classify-right">
-        <view class="classify-right-item" wx:for="{{rightList[select]}}" wx:key="index">
-          <image src="../../images/favor_false.png" class="favor" bind:tap="changefacor"></image>
-          <text class="text1">{{item.text1}}</text>
-          <text class="text2">{{item.text2}}</text>
+        <view class="classify-right-item" wx:for="{{rightList[select]}}" wx:key="index" style="width: 249rpx; height: 231rpx; display: flex; box-sizing: border-box">
+          <image src="{{itemList[item.index].favor===true?'../../images/favor_true.png ':'../../images/favor_false.png'}}" class="favor" data-obj="{{item}}" bind:tap="changefavor"></image>
+          <text class="text1">{{itemList[item.index].text1}}</text>
+          <text class="text2">{{itemList[item.index].text2}}</text>
         </view>
         
         

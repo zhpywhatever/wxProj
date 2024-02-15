@@ -1,97 +1,107 @@
-<view class="all">
-  <view class="title">
-    <image src="../../images/indeximg/logo.png.png" class="logo"></image>
-    <text class="logotext">爆啦AI</text>
-    <search_bar></search_bar>
+<view class="all" style="width: 779rpx; height: 1256rpx; display: block; box-sizing: border-box">
+  <view class="title" style="width: 779rpx; height: 154rpx; display: block; box-sizing: border-box">
+    <image src="../../images/indeximg/logo.png.png" class="logo" style="width: 77rpx; height: 81rpx; display: inline-block; box-sizing: border-box"></image>
+    <text class="logotext" style="margin: 20rpx; position: relative; left: 14rpx; top: 43rpx">爆啦AI</text>
+    <search_bar style="position: relative; left: 0rpx; top: -24rpx"></search_bar>
   </view>
 
-  <view class="FuncArea">
-      <swiper class="swipercontainer" indicator-dots="1" autoplay="1" interval="2000" circular="ture" >
-        <swiper-item>
-          <view class="item">A</view>
+  <view class="FuncArea" style="width: 749rpx; height: 1225rpx; display: block; box-sizing: border-box">
+      <swiper class="swipercontainer" indicator-dots="1" autoplay="1" interval="2000" circular="ture"  style="width: 649rpx; height: 191rpx; display: block; box-sizing: border-box">
+        <swiper-item style="width: 649rpx; height: 145rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+          <view class="item" style="width: 649rpx; height: 171rpx; display: block; box-sizing: border-box">
+           
+          <image src="../../images/AI.png"></image>
+          <view class="child">
+          AI赋能</view>
+          </view>
+          
         </swiper-item>
         <swiper-item>
-          <view class="item">B</view>
+          <view class="item" style="width: 649rpx; height: 171rpx; display: block; box-sizing: border-box"><image src="../../images/AI.png"></image>
+          <view class="child">
+          提升效率</view></view>
         </swiper-item>
-        <swiper-item>
-          <view class="item">C</view>
+        <swiper-item style="width: 649rpx; height: 145rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+          <view class="item" style="width: 649rpx; height: 162rpx; display: block; box-sizing: border-box"><image src="../../images/AI.png"></image>
+          <view class="child">
+          轻松创作</view></view>
         </swiper-item>
       </swiper>
     <view class="FuncArea1">
-      <view class="container1">
-        <view class="file" bind:tap="goto" data-name="数据监控">
-          <view>
+      <view class="container1" style="height: 180rpx; width: 707rpx; display: flex; box-sizing: border-box">
+        <view class="file" bind:tap="goto" data-name="文案提取">
+          <view class="imgg">
             <image src="../../images/indeximg/tiquzimu.png"></image>
           </view>
-          <view>文案提取</view>
+          <view style="font-size: 28rpx; margin-top: 14rpx;">文案提取</view>
         </view>
-        <view class="file" bind:tap="goto" data-name="图片转文字">
-          <view>
+        <view class="file" bind:tap="goto" data-name="去水印">
+          <view class="imgg">
             <image src="../../images/indeximg/xingzhuang8.png"></image>
           </view>
-          <view>去水印</view>
+          <view style="font-size: 28rpx; margin-top: 14rpx;">去水印</view>
         </view>
-        <view class="file" bind:tap="goto" data-name="提词器">
-          <view>
+        <view class="file" bind:tap="goto" data-name="钩子开头">
+          <view class="imgg">
             <image src="../../images/indeximg/mao.png"></image>
           </view>
-          <view>钩子开头</view>
+          <view style="font-size: 28rpx; margin-top: 14rpx;">钩子开头</view>
         </view>
-        <view class="file" bind:tap="goto" data-name="文案提取">
-          <view>
+        <view class="file" bind:tap="goto" data-name="爆款文案">
+          <view class="imgg">
             <image src="../../images/indeximg/baokuan.png"></image>
           </view>
-          <view>爆款文案</view>
+          <view style="font-size: 28rpx; margin-top: 14rpx;">爆款文案</view>
         </view>
-        <view class="file" bind:tap="goto" data-name="智能配音">
-          <view>
+        <view class="file" bind:tap="goto" data-name="起号视频">
+          <view class="imgg">
             <image src="../../images/indeximg/shipin.png"></image>
           </view>
-          <view>起号视频</view>
+          <view style="font-size: 28rpx; margin-top: 14rpx;">起号视频</view>
         </view>
       </view>
-      <view class="container2">
-        <view class="file" bind:tap="goto" data-name="去水印">
-          <view>
+      <view class="container2" style="width: 706rpx; height: 212rpx; display: flex; box-sizing: border-box">
+        <view class="file" bind:tap="goto" data-name="查限流">
+          <view class="imggg">
             <image src="../../images/indeximg/xianliu.png"></image>
           </view>
-          <view>查限流</view>
-        </view>
-        <view class="file" bind:tap="goto" data-name="查权重">
-          <view>
-            <image src="../../images/indeximg/guzhi.png"></image>
-          </view>
-          <view>账号估值</view>
-        </view>
-        <view class="file" bind:tap="goto" data-name="违禁词检测">
-          <view>
-            <image src="../../images/indeximg/rewenerchuang.png"></image>
-          </view>
-          <view>智能二创</view>
+          <view style="font-size: 24rpx; margin-top: 10rpx;">查限流</view>
         </view>
         <view class="file" bind:tap="goto" data-name="账号估值">
-          <view>
+          <view class="imggg">
+            <image src="../../images/indeximg/guzhi.png"></image>
+          </view>
+          <view style="font-size: 24rpx; margin-top: 10rpx;">账号估值</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="智能二创">
+          <view class="imggg">
+            <image src="../../images/indeximg/rewenerchuang.png"></image>
+          </view>
+          <view style="font-size: 24rpx; margin-top: 10rpx;">智能二创</view>
+        </view>
+        <view class="file" bind:tap="goto" data-name="智能配音">
+          <view class="imggg">
             <image src="../../images/indeximg/peiyin.png"></image>
           </view>
-          <view>智能配音</view>
+          <view style="font-size: 24rpx; margin-top: 10rpx;">智能配音</view>
         </view>
-        <view class="file" bind:tap="goto" data-name="视频检测">
-          <view>
+        <view class="file" bind:tap="goto" data-name="免费资料">
+          <view class="imggg">
             <image src="../../images/indeximg/ziliao.png"></image>
           </view>
-          <view>免费资料</view>
+          <view style="font-size: 24rpx; margin-top: 10rpx;">免费资料</view>
         </view>
       </view>
     </view>
     
-    <view class="shell">
-      <view class="big" bind:tap="gotocircle"><text>爆啦新媒体副业圈</text></view>
+    <view class="shell" style="width: 756rpx; height: 417rpx; display: grid; box-sizing: border-box">
+      <view class="big" bind:tap="gotocircle" style="width: 258rpx; height: 414rpx; display: flex; box-sizing: border-box"><text style="width: 307rpx; height: 363rpx; display: block; box-sizing: border-box">爆啦新媒体副业圈</text></view>
       
       
-      <view class="wide" bind:tap="goto" data-name="短视频创作"><text >短视频创作</text></view>
-      <view class="wide" bind:tap="goto" data-name="小视频传顾总"><text>小视频创作</text></view>
-      <view class="wide" bind:tap="goto" data-name="公众号创作"><text>公众号创作</text></view>
-      <view class="wide" bind:tap="goto" data-name="小红书创作"><text>小红书创作</text></view>
+      <view class="wide" bind:tap="goto1" data-name="短视频创作" style="width: 156rpx; height: 185rpx; display: flex; box-sizing: border-box"><text  style="width: 141rpx; height: 160rpx; display: block; box-sizing: border-box">短视频创作</text></view>
+      <view class="wide" bind:tap="goto2" data-name="小视频创作" style="width: 156rpx; height: 185rpx; display: flex; box-sizing: border-box"><text style="width: 135rpx; height: 160rpx; display: block; box-sizing: border-box">小红书创作</text></view>
+      <view class="wide" bind:tap="goto3" data-name="公众号创作" style="width: 156rpx; height: 185rpx; display: flex; box-sizing: border-box"><text style="width: 141rpx; height: 145rpx; display: block; box-sizing: border-box">公众号创作</text></view>
+      <view class="wide" bind:tap="goto4" data-name="小红书创作" style="width: 156rpx; height: 185rpx; display: flex; box-sizing: border-box"><text style="width: 135rpx; height: 153rpx; display: block; box-sizing: border-box">朋友圈创作</text></view>
       
     </view>
   </view>

@@ -1,7 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "myFunctions":"../../components/myFunctions/myFunctions",
-    "uplevelitem":"../../components/uplevelitem/uplevelitem"
+    
   }
 }

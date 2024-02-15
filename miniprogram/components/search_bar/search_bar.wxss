@@ -1,7 +1,9 @@
 /* components/search_bar/search_bar.wxss */
 .search_bar {
     margin: 20rpx;
+    margin-left: 4%;
     position: relative;
+    width: 90%;
   }
   
   .search_input {

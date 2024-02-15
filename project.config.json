@@ -22,7 +22,7 @@
     "compileHotReLoad": false,
     "skylineRenderEnable": true,
     "es6": true,
-    "condition": true
+    "condition": false
   },
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
@@ -37,5 +37,5 @@
     "ignore": [],
     "include": []
   },
-  "appid": "wxdab1043b46ff98f0"
+  "appid": "wxf263c366deb7799c"
 }

@@ -1,6 +1,8 @@
+
+
 // index.ts
 // 获取应用实例
-const app = getApp<IAppOption>()
+var app = getApp<IAppOption>()
 const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'
 
 Component({
@@ -17,8 +19,8 @@ Component({
   },
   methods: {
     gotocircle(){
-      wx.navigateTo({
-        url:`../circle/circle`
+      wx.switchTab({
+        url:'/pages/circle/circle'
       })
     },
     goto(event: { currentTarget: { dataset: { name: any; }; }; }){
@@ -29,6 +31,38 @@ Component({
         url:`../FuncArea1Detail/FuncArea1Detail?name=${this.data.name}`
       })
     },
+
+    goto1(){
+        app.globalData.select = 1
+        
+        wx.switchTab({
+          url:'/pages/AItext/AItext'
+        })
+      },
+
+      goto2(){
+        app.globalData.select = 2
+        
+        wx.switchTab({
+          url:'/pages/AItext/AItext'
+        })
+      },
+
+      goto3(){
+        app.globalData.select = 3
+        
+        wx.switchTab({
+          url:'/pages/AItext/AItext'
+        })
+      },
+
+      goto4(){
+        app.globalData.select = 4
+      
+        wx.switchTab({
+          url:'/pages/AItext/AItext'
+        })
+      },
 
     // 事件处理函数
     bindViewTap() {

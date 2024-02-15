@@ -1,4 +1,4 @@
-import uplevelList from "../../datas/uplevelList.js"
+// import uplevelList from "../../datas/uplevelList.js"
 
 Page({
   data: {

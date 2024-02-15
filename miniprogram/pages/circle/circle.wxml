@@ -1,5 +1,5 @@
 <!--pages/circle/circle.wxml-->
-<view class="topbar">
+<view class="topbar" style="width: 750rpx; height: 162rpx; display: flex; box-sizing: border-box">
   <view class="topbar-title">副业圈</view>
 </view>
 <search_bar></search_bar>
@@ -7,25 +7,36 @@
 
 <view class="classify">
   <!-- 分类导航栏 S -->
-  <scroll-view class="left-navbar" scroll-y="true">
+  <view class="classify-top">
+      <view class="classify-top-item {{select==index?'classify-select':''}}" wx:for="{{asideBar}}" wx:key="index" bind:tap="selectleft" data-index="{{index}}">
+        <text>{{item}}</text>
+        <block wx:if="{{select===index}}">
+          <view class="classify-line"></view>
+        </block>
+      </view>
+      
+    </view>
+  <scroll-view class="left-navbar" scroll-y="true" style="width: 170rpx; height: 1252rpx; display: block; box-sizing: border-box; left: 0rpx; top: 375rpx">
     <view wx:for="{{screenArray}}" class="{{ currentTab == index ? 'active' : '' }}" wx:key="unique" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" id="{{index}}" data-screenId="{{item.screenId}}">{{item.screenName}}
     </view>
     
   </scroll-view>
   <!-- 分类导航栏 E -->
  <!---->
-  <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}" wx:if="{{screenId==1}}">
+  <scroll-view id="right" scroll-y="true" style="z-index: 2; width: 602rpx; height: 1231rpx; display: block; box-sizing: border-box; left: 177rpx; top: 375rpx" scroll-top="{{scrollTop}}" wx:if="{{screenId==1}}">
     <!--顶部图片-->
     
       
-    <view class="circleItems" >
-    <view class="content" wx:for="{{broadcasts}}" wx:for-item="item" wx:for-index="index" wx:key="index">
-        <circleItem item="{{item}}"></circleItem>
+    <view class="circleItems" style="z-index: 10;" >
+    
+    <view class="content" wx:for="{{circlecasts[select]}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <circleItem item="{{item}}" style="width: 672rpx; height: 79rpx; display: block; box-sizing: border-box"></circleItem>
     </view>
     
 </view>
   </scroll-view>
-  <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}" wx:if="{{screenId==1}}">
+  
+  <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}" wx:if="{{screenId==1}}" style="width: 572rpx; height: 1231rpx; display: block; box-sizing: border-box; left: 179rpx; top: 375rpx">
     
     <!--商品展示-->
     <!--
@@ -37,61 +48,63 @@
       </view>
     </view>
     -->
+    <view class="circleItems" style="z-index: 10;" >
+    
+    <view class="content" wx:for="{{circlecasts[select]}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <circleItem item="{{item}}" style="width: 672rpx; height: 79rpx; display: block; box-sizing: border-box"></circleItem>
+    </view>
+    
+</view>
   </scroll-view>
   <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}" wx:if="{{screenId==2}}">
     
-    <!--商品展示-->
-    <view class="goods-list" wx:for="{{childrenArrayTwo.childrenScreenArray}}" wx:key="unique">
-      <view class="goods-title">{{item.screenName}}</view>
-      <view wx:for="{{item.childrenScreenArray}}" class="goods" wx:key="unique" bindtap="ToSearchResult" id="{{item.screenName}}" >
-        <image class="img" src="{{item.showImageUrl}}" wx:if="{{item.showImageUrl}}"></image>
-        <text>{{item.screenName}}</text>
-      </view>
+    <view class="circleItems" style="z-index: 10;" >
+    
+    <view class="content" wx:for="{{circlecasts[select]}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <circleItem item="{{item}}" style="width: 672rpx; height: 79rpx; display: block; box-sizing: border-box"></circleItem>
     </view>
+    
+</view>
   </scroll-view>
   <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}" wx:if="{{screenId==3}}">
    
-    <!--商品展示-->
-    <view class="goods-list" wx:for="{{childrenArray.childrenScreenArray}}" wx:key="unique">
-      <view class="goods-title">{{item.screenName}}</view>
-      <view wx:for="{{item.childrenScreenArray}}" class="goods" wx:key="unique" bindtap="ToSearchResult" id="{{item.screenName}}" >
-        <image class="img" src="{{item.showImageUrl}}" wx:if="{{item.showImageUrl}}"></image>
-        <text>{{item.screenName}}</text>
-      </view>
+    <view class="circleItems" style="z-index: 10;" >
+    
+    <view class="content" wx:for="{{circlecasts[select]}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <circleItem item="{{item}}" style="width: 672rpx; height: 79rpx; display: block; box-sizing: border-box"></circleItem>
     </view>
+    
+</view>
   </scroll-view>
   <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}" wx:if="{{screenId==4}}">
     
-    <!--商品展示-->
-    <view class="goods-list" wx:for="{{childrenArray.childrenScreenArray}}" wx:key="unique">
-      <view class="goods-title">{{item.screenName}}</view>
-      <view wx:for="{{item.childrenScreenArray}}" class="goods" wx:key="unique" bindtap="ToSearchResult" id="{{item.screenName}}" >
-        <image class="img" src="{{item.showImageUrl}}" wx:if="{{item.showImageUrl}}"></image>
-        <text>{{item.screenName}}</text>
-      </view>
+    <view class="circleItems" style="z-index: 10;" >
+    
+    <view class="content" wx:for="{{circlecasts[select]}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <circleItem item="{{item}}" style="width: 672rpx; height: 79rpx; display: block; box-sizing: border-box"></circleItem>
     </view>
+    
+</view>
   </scroll-view>
   <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}" wx:if="{{screenId==5}}">
     
-    <!--商品展示-->
-    <view class="goods-list" wx:for="{{childrenArray.childrenScreenArray}}" wx:key="unique">
-      <view class="goods-title">{{item.screenName}}</view>
-      <view wx:for="{{item.childrenScreenArray}}" class="goods" wx:key="unique" bindtap="ToSearchResult" id="{{item.screenName}}" >
-        <image class="img" src="{{item.showImageUrl}}" wx:if="{{item.showImageUrl}}"></image>
-        <text>{{item.screenName}}</text>
-      </view>
+    <view class="circleItems" style="z-index: 10;" >
+    
+    <view class="content" wx:for="{{circlecasts[select]}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <circleItem item="{{item}}" style="width: 672rpx; height: 79rpx; display: block; box-sizing: border-box"></circleItem>
     </view>
+    
+</view>
   </scroll-view>
   <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}" wx:if="{{screenId==6}}">
    
-    <!--商品展示-->
-    <view class="goods-list" wx:for="{{childrenArray.childrenScreenArray}}" wx:key="unique">
-      <view class="goods-title">{{item.screenName}}</view>
-      <view wx:for="{{item.childrenScreenArray}}" class="goods" wx:key="unique" bindtap="ToSearchResult" id="{{item.screenName}}" >
-        <image class="img" src="{{item.showImageUrl}}" wx:if="{{item.showImageUrl}}"></image>
-        <text>{{item.screenName}}</text>
-      </view>
+    <view class="circleItems" style="z-index: 10;" >
+    
+    <view class="content" wx:for="{{circlecasts[select]}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <circleItem item="{{item}}" style="width: 672rpx; height: 79rpx; display: block; box-sizing: border-box"></circleItem>
     </view>
+    
+</view>
   </scroll-view>
 
   

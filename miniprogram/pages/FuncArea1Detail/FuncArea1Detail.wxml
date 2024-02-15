@@ -1,10 +1,10 @@
 <!--pages/FuncArea1Detail/FuncArea1Detail.wxml-->
-<view class="topbar">
+<view class="topbar" style="width: 750rpx; height: 185rpx; display: flex; box-sizing: border-box">
 <navigator url="/pages/homepage/homepage" open-type="switchTab" class="return">
-  <image src="../../images/return.png" ></image>
+  <image src="../../images/return2.png"  style="width: 60rpx; height: 54rpx; display: inline-block; box-sizing: border-box"></image>
 </navigator>
 </view>
-<view class="judge"></view>
+
 
 <view>
     

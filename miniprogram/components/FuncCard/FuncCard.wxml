@@ -11,11 +11,19 @@
 </view>
 <view wx:elif="{{cata==2}}">
   <view style="font-size: large;text-align: center;margin-top: 20rpx;">请输入文本</view>
-  <view class="input">
+  
+  <!-- <view class="input">
     <input type="text" auto-focus="1" ></input>
-  </view>
-  <view style="font-size: large;text-align: center;margin-top: 20rpx;">查看结果</view>
-  <view class="output"></view>
+  </view> -->
+ 
+  
+  <view class="tar">
+  <textarea style="max-height: 100px;" model:value="{{content}}" auto-height class="textarea"></textarea>
+</view>
+  <button style="font-size: large;text-align: center;margin-top: 20rpx;margin-bottom: 20rpx;background-color: rgb(133, 135, 206);" bindtap="viewResults">查看结果</button>
+  <view class="tar">
+  <textarea style="max-height: 350px;" model:value="{{result}}" auto-height class="textarea"></textarea>
+</view>
 </view>
 <view wx:if="{{cata==3}}">
   <view style="font-size: large;text-align: center;margin-top: 20rpx;">请输入账号</view>
@@ -25,4 +33,22 @@
   <view style="font-size: large;text-align: center;margin-top: 20rpx;">查看结果</view>
   <view class="output"></view>
 </view>
+
+<view wx:elif="{{cata==4}}">
+  <view style="font-size: large;text-align: center;margin-top: 20rpx;">请输入题目</view>
+  
+  <!-- <view class="input">
+    <input type="text" auto-focus="1" ></input>
+  </view> -->
+ 
+  
+  <view class="tar">
+  <textarea style="max-height: 50px;" model:value="{{content}}" auto-height class="textarea"></textarea>
 </view>
+  <button style="font-size: large;text-align: center;margin-top: 20rpx;margin-bottom: 20rpx;background-color: rgb(133, 135, 206);" bindtap="viewResults4">查看结果</button>
+  <view class="tar">
+  <textarea style="max-height: 400px;" model:value="{{result}}" auto-height class="textarea" maxlength="240"></textarea>
+</view>
+</view>
+</view>
+

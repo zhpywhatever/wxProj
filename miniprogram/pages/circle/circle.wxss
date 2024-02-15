@@ -1,4 +1,8 @@
 /* pages/circle/circle.wxss */
+page{
+    background-color: #ffffff;
+    
+  }
 .topbar {
     background-color: #1c085d;
     height: 30px;
@@ -126,3 +130,37 @@
         align-items: center;
         
         }
+        .classify-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            background-color: #ffffff;
+          }
+          
+          .classify-top-item{
+              width: 100px;
+            font-size: large;
+            background-color: #ffffff;
+            padding:15rpx 15rpx;
+            text-align: center;
+            color: rgb(24,10,89,1);
+            font-weight: 500;
+            position: relative;
+          }
+          
+          .classify-line{
+            position: absolute;
+            bottom: 1;
+            height:3px;
+            width: 30px;
+            background-color: rgb(24,10,89,1);
+            border-radius: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          
+          .classify-select{
+            font-weight:bolder;
+            font-size:larger ;
+          }

@@ -1,6 +1,7 @@
-<!--pages/task/task.wxml-->
-<view class="topbar">
+<!-- pages/task/task.wxml-->
+<view class="topbar" style="width: 750rpx; height: 162rpx; display: flex; box-sizing: border-box">
   <view class="topbar-title">课堂</view>
+
 </view>
 <view class="main_background">
 
@@ -61,3 +62,6 @@
   </view>
 
 </view>
+
+
+

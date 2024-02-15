@@ -20,24 +20,24 @@ Page({
       name:name
     })
     switch(this.data.name){
-      case "图片转文字":
+      case "钩子开头":
+        this.setData({
+          cata:4
+        })
+        break;
+      case "爆款文案":
         this.setData({
           cata:1
         })
         break;
-      case "数据监控":
-        this.setData({
-          cata:1
-        })
-        break;
-      case "提词器":
+      case "起号视频":
         this.setData({
           cata:1
         })
         break;
       case "文案提取":
         this.setData({
-          cata:1
+          cata:2
         })
         break;
       case "智能配音":
@@ -50,12 +50,12 @@ Page({
           cata:1
         })
         break;
-      case "查权重":
+      case "查限流":
         this.setData({
           cata:1
         })
         break;
-      case "违禁词检测":
+      case "智能二创":
         this.setData({
           cata:2
         })
@@ -65,12 +65,12 @@ Page({
           cata:3
         })
         break;
-      case "视频检测":
+      case "智能配音":
         this.setData({
           cata:1
         })
         break;
-      case "公众号创作":
+      case "免费资料":
         this.setData({
           cata:1
         })

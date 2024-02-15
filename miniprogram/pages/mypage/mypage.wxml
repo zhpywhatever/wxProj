@@ -1,44 +1,52 @@
+
 <!--pages/mypage/mypage.wxml-->
-<view class="topbar">
+<view class="topbar" style="width: 750rpx; height: 162rpx; display: flex; box-sizing: border-box">
   <view class="topbar-title">个人中心</view>
 </view>
-<view class="main_background">
-  <view class="profile-info">
+<view class="main_background" style="width: 750rpx; height: 1302rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+  <view class="profile-info" style="width: 712rpx; height: 281rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -50rpx">
     <view class="profile_upper">
-      <image src = "../../assets/用户.png" class="avatar"></image>
-      <view class="login">
+      <image src = "../../assets/用户.png" class="avatar" style="width: 155rpx; height: 155rpx; display: block; box-sizing: border-box;border-radius: 50%;background-color: rgb(238, 237, 237);"></image>
+      <view class="login" style="width: 354rpx; height: 175rpx; display: block; box-sizing: border-box">
         <button class="loginBTN">点击登录</button>
-        <view class="logininfo">登录体验更多功能</view>
+        <view class="logininfo" style="width: 210rpx; height: 35rpx; display: block; box-sizing: border-box; position: relative; left: 73rpx; top: 11rpx">登录体验更多功能</view>
       </view>
     </view>
     
-    <view class="profile_lower">
-      <image src="../../assets/管理.png" class="unlock_icon"></image>
-      <text class="profileright">我的权益</text>
+    <view class="profile_lower" style="width: 693rpx; height: 81rpx; display: flex; box-sizing: border-box">
+      <image src="../../assets/管理.png" class="unlock_icon" style="position: relative; left: 66rpx; top: -22rpx; width: 85rpx; height: 81rpx; display: block; box-sizing: border-box"></image>
+      <text class="profileright" style="position: relative; left: 127rpx; top: -4rpx">我的权益</text>
       <text class="unlockmore">解锁更多权益</text>
     </view>
   </view>
 
 
-  <view class="uplevel">
+  <view class="uplevel" style="width: 712rpx; height: 595rpx; display: block; box-sizing: border-box; left: 0rpx; top: -45rpx; position: relative">
     <view class="upleveltitle">升级享受权益</view>
-    <view class="uplevellist">
+    <view class="uplevellist" style="width: 712rpx; height: 458rpx; display: flex; box-sizing: border-box">
       <view wx:for="{{uplevelArray}}" class="uplevelitem" wx:key="unique">
           <image class="uplevelitem_icon" src="{{item.src}}"></image>
-          <text class="uplevelitem_text">{{item.uplevelright}}</text>
+          <text class="uplevelitem_text" style="color: rgb(250, 242, 227)">{{item.uplevelright}}</text>
       </view>
     </view>
-    <button class="uplevelnow">立即升级</button>
+    <button class="uplevelnow" style="position: relative; left: 0rpx; top: -70rpx ;color: rgba(24, 10, 89, 1);">立即升级</button>
   </view>
 
 
-  <view class="function_area">
+  <view class="function_area" style="width: 712rpx; height: 312rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -50rpx">
     <view class="function_title">我的功能</view>
-    <view class="function_list">
-      <view wx:for="{{functionArray}}" class="myFunction" wx:key="unique">
+    <view class="function_list" style="width: 712rpx; height: 208rpx; display: flex; box-sizing: border-box">
+      <view wx:for="{{functionArray}}" class="myFunction" wx:key="unique" style="width: 168rpx; height: 229rpx; display: block; box-sizing: border-box">
+      
         <image src="{{item.src}}" class="function_img"></image>
         <text class="function_text">{{item.functionName}}</text>
       </view>
     </view>
   </view>
 </view>
+
+<!-- pages/mypage/mypage.wxml
+<view class="topbar" style="width: 750rpx; height: 162rpx; display: flex; box-sizing: border-box">
+  <view class="topbar-title">我的</view>
+</view> -->
+
